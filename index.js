@@ -32,7 +32,9 @@ function startup() {
                 ids_to_color[id] = getcolor(key);
                 if (data[key].indexOf(id) == -1) {
                     data[key].push(id)
-                }
+                } else {
+            element.style.fill = "#ffffff";
+        }
             })
         }
     }
@@ -41,6 +43,8 @@ function startup() {
         if (c != undefined)
         {
             element.style.fill = `#${c}`;
+        } else {
+            element.style.fill = "#ffffff";
         }
     })
 
