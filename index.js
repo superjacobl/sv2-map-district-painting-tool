@@ -14,7 +14,7 @@ function startup() {
     }
 
     const inputElement = document.getElementById("input");
-    inputElement.addEventListener("change", () => handleFiles, false);
+    inputElement.addEventListener("change", () => handleFiles(), false);
 
     async function handleFiles() {
     ahhhh = await this.files[0].text();
