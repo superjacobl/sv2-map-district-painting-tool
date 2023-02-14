@@ -14,10 +14,10 @@ function startup() {
     }
 
     const inputElement = document.getElementById("input");
-    inputElement.addEventListener("change", handleFiles, false);
+    inputElement.addEventListener("change", () => handleFiles, false);
 
-    function handleFiles() {
-    ahhhh = this.files[0].text();
+    async function handleFiles() {
+    ahhhh = await this.files[0].text();
     jsondata = JSON.parse(ahhhh); /* now you can work with the file list */
 
     if (jsondata != undefined)
