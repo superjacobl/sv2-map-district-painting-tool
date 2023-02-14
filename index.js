@@ -26,6 +26,8 @@ function startup() {
 
     if (jsondata != undefined)
     {
+        data = {};
+        
         for (const [key, value] of Object.entries(jsondata)) {
             data[key] = []
             value.forEach(id => {
