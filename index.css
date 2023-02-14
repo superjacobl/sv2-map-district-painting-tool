@@ -18,6 +18,6 @@ body {
 }
 
 #svg {
-    transform: scale(3,3);
+    transform: scale(2,2);
     transform-origin: 0 0;
 }
