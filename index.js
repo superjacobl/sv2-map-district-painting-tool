@@ -17,7 +17,8 @@ function startup() {
     inputElement.addEventListener("change", handleFiles, false);
 
     function handleFiles() {
-    const jsondata = JSON.parse(this.files[0].text()); /* now you can work with the file list */
+    ahhhh = this.files[0].text();
+    jsondata = JSON.parse(ahhhh); /* now you can work with the file list */
 
     if (jsondata != undefined)
     {
