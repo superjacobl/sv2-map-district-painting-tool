@@ -12,6 +12,27 @@ function startup() {
             })
         }
     }
+
+    const inputElement = document.getElementById("input");
+    inputElement.addEventListener("change", handleFiles, false);
+
+    function handleFiles() {
+    const jsondata = JSON.parse(this.files[0].text()); /* now you can work with the file list */
+
+    if (jsondata != undefined)
+    {
+        for (const [key, value] of Object.entries(jsondata)) {
+            data[key] = []
+            value.forEach(id => {
+                ids_to_color[id] = getcolor(key);
+                if (data[key].indexOf(id) == -1) {
+                    data[key].push(id)
+                }
+            })
+        }
+    }
+    }
+
     Array.from(document.getElementsByTagName("path")).forEach(element => {
         element.onmouseover = function fe() {clickedProvice(element.id)}
         element.onclick = function ff() { 
@@ -26,6 +47,7 @@ function startup() {
         }
     })
 }
+
 
 ismousedown = false
 
