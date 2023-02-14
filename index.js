@@ -36,6 +36,14 @@ function startup() {
             })
         }
     }
+            Array.from(document.getElementsByTagName("path")).forEach(element => {
+        c = ids_to_color[parseInt(element.id)]
+        if (c != undefined)
+        {
+            element.style.fill = `#${c}`;
+        }
+    })
+
     }
 
     Array.from(document.getElementsByTagName("path")).forEach(element => {
