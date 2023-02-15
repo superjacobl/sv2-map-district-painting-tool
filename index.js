@@ -1,3 +1,5 @@
+paintstrokessamecolor = false
+
 function startup() {
     ids_to_color = {}
     if (jsondata != undefined)
@@ -43,6 +45,9 @@ function startup() {
         if (c != undefined)
         {
             element.style.fill = `#${c}`;
+            if (paintstrokessamecolor) {
+                element.style.stroke = `#${c}`;
+            }
         } else {
             element.style.fill = `#ffffff`;
         }
@@ -52,17 +57,25 @@ function startup() {
 
     Array.from(document.getElementsByTagName("path")).forEach(element => {
         element.onmouseover = function fe() {clickedProvice(element.id)}
-        element.onclick = function ff() { 
+        element.onmousedown = function ff() { 
             ismousedown = true; 
             clickedProvice(element.id);
+        }
+        element.onmouseup = function fa() {
             ismousedown = false;
         }
         c = ids_to_color[parseInt(element.id)]
         if (c != undefined)
         {
             element.style.fill = `#${c}`;
+            if (paintstrokessamecolor) {
+                element.style.stroke = `#${c}`;
+            }
         } else {
             element.style.fill = `#ffffff`;
+            if (paintstrokessamecolor) {
+                element.style.stroke = `#${c}`;
+            }
         }
     })
 }
@@ -113,7 +126,8 @@ colorinfo = {
 function getcolor(name) {
     c = colorinfo[name];
     if (c == undefined)
-        return "000000";
+        return "000000"
+        //return "000000";
     return c
 }
 
@@ -123,6 +137,9 @@ function clickedProvice(proviceid) {
     }
     el =  document.getElementById(proviceid);
     el.style.fill = `#${getcolor(currentdistrict)}`;
+    if (paintstrokessamecolor) {
+        el.style.stroke = `#${c}`;
+    }
     console.log(el.id)
     for (const [key, value] of Object.entries(data)) {
         if (key != currentdistrict)
