@@ -107,20 +107,12 @@ function setdistrict(button, district) {
 }
 
 colorinfo = {
-    "Ardenti Terra": "B7BCFC",
-    "Elysian Katonia": "B8B7FD",
-    "New Vooperis": "FEEAB7",
-    "Lanatia": "F4B7FD",
-    "Kogi": "B6EEFD",
-    "Landing Cove": "FDB7B7",
-    "New Avalon": "D3FCB6",
-    "New Spudland": "EAB7FC",
-    "Novastella": "B7FDE5",
-    "Old King": "C0FDB7",
-    "San Vooperisco": "FAFDB8",
-    "Thesonica": "FDD9B7",
-    //"Voopmont": "FFFFFF"
-    "Voopmont": "CCCCCC"
+    "United States of Qortos": "FEEAB7",
+    "Northern Parthenian Republic": "F4B7FD",
+    "Republic of Caelestis": "D3FCB6",
+    "Paunas United Provinces": "FDB7B7",
+    "Azurite Empire": "B7FDE5",
+    "United Corporations of Adramat": "FAFDB8",
 }
 
 function getcolor(name) {
