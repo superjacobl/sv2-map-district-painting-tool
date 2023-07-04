@@ -110,9 +110,9 @@ colorinfo = {
     "United States of Qortos": "FEEAB7",
     "Northern Parthenian Republic": "F4B7FD",
     "Republic of Caelestis": "D3FCB6",
-    "Paunas United Provinces": "FDB7B7",
+    "Paunas United Provinces": "FAFDB8",
     "Azurite Empire": "B7FDE5",
-    "United Corporations of Adramat": "FAFDB8",
+    "United Corporations of Adramat": "FDB7B7",
 }
 
 function getcolor(name) {
