@@ -107,12 +107,16 @@ function setdistrict(button, district) {
 }
 
 colorinfo = {
+    "Archelon Republic": "B7BCFC",
+    "The Astarian Egis": "B8B7FD",
     "United States of Qortos": "FEEAB7",
-    "Northern Parthenian Republic": "F4B7FD",
-    "Republic of Caelestis": "D3FCB6",
-    "Paunas United Provinces": "FAFDB8",
-    "Azurite Empire": "B7FDE5",
-    "United Corporations of Adramat": "FDB7B7",
+    "Isurium": "F4B7FD",
+    "The Procrastin Nation": "B6EEFD",
+    "Oglar": "FDB7B7",
+    "Fraisia": "D3FCB6",
+    "Arkoros": "EAB7FC",
+    "United Corporations of Adramat": "B7FDE5",
+    "The Sublime State of the Fíkret": "FAFDB8",
 }
 
 function getcolor(name) {
