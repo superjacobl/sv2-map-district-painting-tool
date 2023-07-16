@@ -1,4 +1,4 @@
-paintstrokessamecolor = true
+paintstrokessamecolor = false
 
 function startup() {
     ids_to_color = {}
