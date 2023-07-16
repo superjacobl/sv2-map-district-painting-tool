@@ -1,4 +1,4 @@
-paintstrokessamecolor = false
+paintstrokessamecolor = true
 
 function startup() {
     ids_to_color = {}
@@ -111,11 +111,11 @@ colorinfo = {
     "The Astarian Egis": "B8B7FD",
     "United States of Qortos": "FEEAB7",
     "Isurium": "F4B7FD",
-    "The Procrastin Nation": "B6EEFD",
+    "The Procrastin Nation": "B7FDE5",
     "Oglar": "FDB7B7",
     "Fraisia": "D3FCB6",
     "Arkoros": "EAB7FC",
-    "United Corporations of Adramat": "B7FDE5",
+    "United Corporations of Adramat": "B6EEFD", 
     "The Sublime State of the Fíkret": "FAFDB8",
 }
 
